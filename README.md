@@ -36,3 +36,64 @@ PageIndex-style document structuring (commonly used in RAG), adapted here for tr
   "context": "Networking > TCP > Congestion Control",
   "text": "TCP uses congestion control mechanisms to regulate data flow..."
 }
+
+
+## ⚙️ Setup
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/SoniaChugh06/PageIndex-Data-Pipeline
+cd PageIndex-Data
+```
+
+### 2. Create and activate a virtual environment
+
+**Windows (VS Code / PowerShell)**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**macOS/Linux**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download spaCy model (required for sentence chunking)
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
+### 5. Run the scripts
+
+**Paragraph Chunking**
+
+```bash
+python paragraph_chunking.py
+```
+
+**Sentence Chunking**
+
+```bash
+python sentence_chunking.py
+```
+
+### 📌 Notes
+
+* Place your markdown files in the configured `INPUT_FOLDER`
+* Output will be saved as `.jsonl` files
+* You can tweak `MIN_TOKENS` and `MAX_TOKENS` in the scripts
+
