@@ -25,7 +25,7 @@ def split_into_sentences(text):
 # Configuration
 # =========================
 
-INPUT_FOLDER = "HPE_PDF_to_markdown_v1/HPE_PDF_to_markdown_v1"
+INPUT_FOLDER = "input.data"
 OUTPUT_FILE = "sentence_training_dataset.jsonl"
 
 MIN_TOKENS = 200
